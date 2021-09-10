@@ -1,9 +1,14 @@
-print("Hola soy un conversor de monedas")
-print("En mi primera versión tengo dos posibilidades")
-print("Opción 1: COP a USD")
-print("Opción 2: USD a COP")
+menu = """
+Bienvenid@ al conversor de monedas 💰
 
-opcion = input("¿Qué opción quieres 1 o 2?: ")
+1 - COP a USD
+2 - ARS a USD
+3 - MXN a USD
+4 - USD a COP
+
+Elige una opción: """
+
+opcion = input(menu)
 
 if opcion=="1":
     pesos = input("Ingrese el valor en COP: ")
