@@ -1,3 +1,11 @@
+def conversor(tipo_pesos, valor_dolar):
+    pesos = input("Ingrese el valor en" + tipo_pesos + ": ")
+    pesos = float(pesos)
+    dolares = pesos / valor_dolar
+    dolares = round(dolares, 2)
+    dolares = str(dolares)
+    print("Tienes $" + dolares +  " dólares")
+
 menu = """
 Bienvenid@ al conversor de monedas 💰
 
@@ -11,31 +19,13 @@ Elige una opción: """
 opcion = input(menu)
 
 if opcion == "1":
-    pesos = input("Ingrese el valor en COP: ")
-    pesos = float(pesos)
-    valor_dolar = 3875
-    dolares = pesos / valor_dolar
-    dolares = round(dolares, 2)
-    dolares = str(dolares)
-    print("Tienes $" + dolares +  " dólares")
+    conversor('COP', 3875)
 
 elif opcion == "2":
-    pesos = input("Ingrese el valor en ARS: ")
-    pesos = float(pesos)
-    valor_dolar = 65
-    dolares = pesos / valor_dolar
-    dolares = round(dolares, 2)
-    dolares = str(dolares)
-    print("Tienes $" + dolares +  " dólares")
+    conversor('ARS', 65)
 
 elif opcion == "3":
-    pesos = input("Ingrese el valor en MXN: ")
-    pesos = float(pesos)
-    valor_dolar = 24
-    dolares = pesos / valor_dolar
-    dolares = round(dolares, 2)
-    dolares = str(dolares)
-    print("Tienes $" + dolares +  " dólares")
+    conversor('MXN', 24)
 
 elif opcion == "4":
     dolares = input("Ingrese el valor en USD: ")
