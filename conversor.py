@@ -19,7 +19,7 @@ Elige una opción: """
 opcion = input(menu)
 
 if opcion == "1":
-    conversor('COP', 3875)
+    conversor('COP', 3835)
 
 elif opcion == "2":
     conversor('ARS', 65)
@@ -28,13 +28,7 @@ elif opcion == "3":
     conversor('MXN', 24)
 
 elif opcion == "4":
-    dolares = input("Ingrese el valor en USD: ")
-    dolares = float(dolares)
-    valor_dolar = 3875
-    pesos = dolares * valor_dolar
-    pesos = round(pesos, 2)
-    pesos = str(pesos) 
-    print("Tienes $" + pesos +  " Pesos")
+    conversor('USD', 1/3835)
 
 else:
     print("Value Error")
